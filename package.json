@@ -1,0 +1,24 @@
+{
+  "name": "pricechecker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NevMoney/priceChecker.git"
+  },
+  "author": "Nev K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NevMoney/priceChecker/issues"
+  },
+  "homepage": "https://github.com/NevMoney/priceChecker#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.7",
+    "dotenv": "^10.0.0",
+    "nightmare": "^3.0.2"
+  }
+}
