@@ -9,6 +9,8 @@ const url = inputs[0]
 const myPrice = parseFloat(inputs[1])
 const myAddress = inputs[2]
 
+checkPrice()
+
 async function checkPrice() {
   try {
     const priceString = await nightmare
@@ -30,11 +32,10 @@ async function checkPrice() {
     }
   } catch (error) {
     await sendEmail('Price Checker ERROR', error.message)
+    console.error(error)
     throw error
   }
 }
-
-checkPrice()
 
 async function sendEmail(subject, body, myAddress) {
   const email = {
